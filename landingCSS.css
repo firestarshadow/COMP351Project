@@ -1,0 +1,90 @@
+body {
+    background-color: #ADD8E6;
+}
+h1,
+p {
+	text-align: center;
+}
+
+p {
+	font-size: 2vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
+  gap: 0px 0px;
+  height: 98vh;
+  grid-template-areas:
+    ". . . ."
+    ". Admin Student ."
+    ". . . .";
+}
+.Admin { 
+	grid-area: Admin;
+	display: grid;
+  	grid-template-columns: 0.1fr 1fr 0.1fr;
+  	grid-template-rows: 0.25fr .5fr 0.25fr;
+  	gap: 0px 0px;
+  	grid-template-areas:
+    	". Head ."
+    	". Body ."
+    	". Button .";
+
+	background-color: #557A95; 
+}
+
+.Head { grid-area: Head; }
+.Body { grid-area: Body; }
+.Button { grid-area: Button; }
+
+.Head,
+.Body,
+.Button,
+.Head2,
+.Body2,
+.Button2  {
+	color: #fffff4;
+}
+
+
+.Student { 
+	grid-area: Student;
+	display: grid;
+  	grid-template-columns: 0.1fr 1fr 0.1fr;
+  	grid-template-rows: 0.25fr 0.5fr 0.25fr;
+  	gap: 0px 0px;
+  	grid-template-areas:
+    	". Head2 ."
+    	". Body2 ."
+    	". Button2 .";
+
+	background-color: #7395AE; 
+}
+
+.Head2 { grid-area: Head2; }
+.Body2 { grid-area: Body2; }
+.Button2 { grid-area: Button2; }
+
+.Button a h1,
+.Button2 a h1 {
+	 	background-color: #379683;
+		color: #fffff4;
+		padding: 1em 1.5em;
+		text-decoration: none;
+		text-transform: uppercase;
+		box-shadow: 0 5px 0 #5D5C61;
+		position: relative;
+	}
+	a h1:hover {
+		background-color: #B1A296;
+		cursor: pointer;
+	}
+	a h1:active {
+		background-color: #5D5C61;
+		box-shadow: none;
+  		top: 5px;
+	}
+}
+

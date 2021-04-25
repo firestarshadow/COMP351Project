@@ -1,0 +1,81 @@
+.card {
+	background-color: #7395ae;
+	box-shadow: 0 5px 0 #1b4766;
+	width: 100%;
+	height: 120px;
+	border: 3px solid rgb(58, 82, 94);
+	padding: 20px;
+	margin-bottom: 1vh;
+	text-align: center;
+	
+}
+
+
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Center .";
+}
+.Center { grid-area: Center; }
+        
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+body {
+	background-color: #557a95;
+	color: #fffff4;
+}
+
+h1,
+p {
+	text-align: center;
+}
+
+	a h1 {
+	 	background-color: #379683;
+		color: #fffff4;
+		padding: 1em 1.5em;
+		text-decoration: none;
+		text-transform: uppercase;
+		box-shadow: 0 5px 0 #5D5C61;
+		position: relative;
+	}
+	a h1:hover {
+		background-color: #B1A296;
+		cursor: pointer;
+	}
+	a h1:active {
+		background-color: #5D5C61;
+		box-shadow: none;
+  		top: 5px;
+	}
+}
